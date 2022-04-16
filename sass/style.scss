@@ -1,0 +1,29 @@
+@import "vars";
+@import "mixins";
+@import "layout/navigation";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:ital,wght@0,300;1,400&display=swap");
+
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1{
+    font-size: $h1;
+}
+
+.test{
+    padding: 10px;
+    font-size: $P;
+}
