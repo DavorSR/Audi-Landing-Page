@@ -2,6 +2,7 @@
     color: rgba(255, 255, 255, 0.898);
     padding: 10px 0;
     font-weight: 900;
+    font-size: $P;
 }
 
 @mixin transform($value) {
@@ -15,4 +16,42 @@
     -moz-transition: ($value);
     -ms-transition: ($value);
     transition: ($value);
+}
+
+  $md: 768px;
+  $lg: 992px;
+  $xl: 1200px;
+  $xxl: 1400px;
+
+@mixin eXSmall {
+    @media (max-width: 505px) {
+        @content;
+    }
+    
+}  
+
+@mixin mobile {
+    @media (min-width:506px ) and(max-width: $md) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (min-width:769px ) and (max-width: $lg) {
+        @content;
+    }
+}
+@mixin lg {
+    @media (max-width: $lg ) {
+        @content;
+    }
+}
+@mixin xl {
+    @media (max-width: $xl) {
+        @content;
+    }
+}
+@mixin xxl {
+    @media (max-width: $xxl) {
+        @content;
+    }
 }

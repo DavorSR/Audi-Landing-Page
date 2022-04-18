@@ -14,7 +14,6 @@ nav {
         li {
             display: inline-block;
             position: relative;
-            text-transform: uppercase;
             padding: 15px 0;
             text-align: center;
             cursor: pointer;
@@ -22,12 +21,12 @@ nav {
             width: $min-width;
             transform: translateY(+5px);
 
-            &:hover > .drop{
+            &:hover > .drop {
                 display: block;
             }
 
             a {
-                font-size:  clamp(1rem, 1.25vw, 1.25rem);
+                font-size: clamp(1rem, 1.25vw, 1.25rem);
                 text-decoration: none;
                 color: #ffffff;
             }
@@ -35,17 +34,16 @@ nav {
     }
 }
 
-// .findUS {
-//     background: rgb(43, 43, 43);
-//     border-radius: 2px;
+.findUS {
+    background: rgb(43, 43, 43);
+    border-radius: 2px;
 
-//     &:hover {
-//         background: $secondarycolor;
-//     }
-// }
+    &:hover {
+        background: $secondarycolor;
+    }
+}
 
-
-.drop{
+.drop {
     display: none;
     list-style: none;
     position: absolute;
@@ -55,19 +53,18 @@ nav {
     top: 45px;
 
     li {
-                display: block;
-                text-transform: none;
-                padding: 10px;
-                width: 100%;
-                background: rgb(0, 0, 0) !important;
-                z-index: 1000;
-        
-                &:hover {
-                    border-bottom: 1px solid $secondarycolor;
-                }
-            }
-}
+        display: block;
+        text-transform: none;
+        padding: 10px;
+        width: 100%;
+        background: rgb(0, 0, 0) !important;
+        z-index: 1000;
 
+        &:hover {
+            border-bottom: 1px solid $secondarycolor;
+        }
+    }
+}
 
 #marker {
     height: 2px;

@@ -8,6 +8,20 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Audi</title>
+
+    <script>
+        var i = 0;
+        var images = [];
+        var time = 3000;
+
+        images[0] = 'image1.jpg'
+        images[1] = 'image2.jpg'
+        images[2] = 'image3.jpg'
+
+        function changeImg() {
+            document.slide.src
+        }
+    </script>
 </head>
 
 <body>
@@ -20,11 +34,11 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About US</a>
                     <ul class="drop">
-                       
-                            <li><a href="#">Our Team</a></li>
-                            <li><a href="#">Leadership</a></li>
-                            <li><a href="#">Partners</a></li>
-                        
+
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Leadership</a></li>
+                        <li><a href="#">Partners</a></li>
+
                     </ul>
                 </li>
                 <li><a href="#">Products</a></li>
@@ -33,10 +47,184 @@
             </ul>
 
         </nav>
+        <!-- Main image container with related info -->
+        <div class="cover">
+
+            <div class="cover_info">
+                <span>New Arrival</span>
+                <h1>Expectations put limitations on possibilities.</h1>
+                <p>The Audi Q8 offers a unique preformance that blends sport and utility into a momentous SUV desing.
+                </p>
+            </div>
+        </div>
     </header>
 
     <main>
-        
+
+        <!-- About Q8 section with info about latest model -->
+        <section class="aboutQ8">
+
+            <div class="aboutQ8_wrrap">
+
+                <div class="car">
+                    <img src="Assets/Images/about-us-section.png" alt="">
+
+                    <p>A progresive design, a powerful engine.</p>
+
+                </div>
+
+
+                <div class="aboutQ8_info">
+
+                    <span>About Q8</span>
+
+                    <h2>Welcome to the 8th dimension. The new Audi Q8</h2>
+
+                    <p>With its imposing Singleframe in octagonal design, the Audi Q8 presents the new face of the Q
+                        family.</p>
+                    <p class="second">The radiator grille combines with the forward-mounted spoiler and strongly
+                        contoured air inlets to underline it's confident look. </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured section presenting our latest model -->
+
+        <section>
+            <div class="featured">
+
+                <div class="featured_wrrap">
+
+                    <span class="promo">Featured</span>
+
+                    <h2>Brand new The Audi RSQ8</h2>
+
+                    <p>The RSQ8 gives you the choice: depending on the selected equipment, its lookss are even bolder
+                        and sportier to suit your personal ambitions.</p>
+                    <div class="featured_wrrap_boxes">
+
+                        <div class="box">
+                            <span>POWER OUTPUT</span>
+                            <span>441kw</span>
+                            <span>(600 hp)</span>
+                        </div>
+
+                        <div class="box">
+                            <span>ACCELERATION</span>
+                            <span>3.8</span>
+                            <span>seconds</span>
+                        </div>
+
+                        <div class="box">
+                            <span>TORQUE</span>
+                            <span>800</span>
+                            <span>Nm</span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Offers, Buy Now most popular models -->
+
+        <section class="offers">
+            <h2>You might take a look...</h2>
+
+            <div class="offers_wrrap">
+                <!-- Start of box with 1 offer (rest are duplicated structure)-->
+                <div class="examples">
+
+                    <img src="Assets/Product Images/product-card-audi-q3.png" class="cars" alt="">
+
+                    <p class="seatDoor">5 Seats, 4 Doors</p>
+                    <h3>Audi Q3 2020</h3>
+
+                    <p><img src="/Assets/Icons/Path@2x.png" alt="">Includes 300 free km</p>
+
+                    <p><img src="/Assets/Icons/Path@2x.png" alt="">Teft Protection</p>
+
+                    <p><img src="/Assets/Icons/Path@2x.png" alt="">Non Refundable</p>
+                    <div>
+
+
+                        <p class="price">Starting from<br> <span>29.999€</span></p>
+                        <input class="btn" type="submit" value="Buy Now">
+                    </div>
+                </div>
+
+                <!-- end of box with offer -->
+
+                <div class="examples">
+
+                    <img src="Assets/Product Images/product-card-audi-a4.png" class="cars" alt="">
+
+                    <p class="seatDoor">5 Seats, 4 Doors</p>
+
+                    <h3>Audi A4 2020</h3>
+
+                    <p><img src="/Assets/Icons/Path@2x.png" alt="">Includes 300 free km</p>
+
+                    <p><img src="/Assets/Icons/Path@2x.png" alt="">Teft Protection</p>
+
+                    <p><img src="/Assets/Icons/Path@2x.png" alt="">Non Refundable</p>
+
+                    <div>
+                        <p class="price">Starting from<br> <span>24.999€</span></p>
+
+                        <input class="btn" type="submit" value="Buy Now">
+
+                    </div>
+                </div>
+
+                <div class="examples">
+
+                    <img src="Assets/Product Images/product-card-audi-a3.png" class="cars" alt="">
+
+                    <p class="seatDoor">5 Seats, 4 Doors</p>
+                    <h3>Audi A3 2020</h3>
+
+                    <p><img src="/Assets/Icons/Path@2x.png" alt="">Includes 300 free km</p>
+
+                    <p><img src="/Assets/Icons/Path@2x.png" alt="">Teft Protection</p>
+
+                    <p><img src="/Assets/Icons/Path@2x.png" alt="">Non Refundable</p>
+
+                    <div>
+                        <p class="price">Starting from<br> <span>19.999€</span></p>
+
+                        <input class="btn" type="submit" value="Buy Now">
+
+                    </div>
+                </div>
+
+                <div class="examples">
+
+                    <img src="Assets/Product Images/product-card-audi-q7.png" class="cars" alt="">
+
+                    <p class="seatDoor">5 Seats, 4 Doors</p>
+                    <h3>Audi Q& 2020</h3>
+
+                    <p><img src="/Assets/Icons/Path@2x.png" alt="">Includes 300 free km</p>
+
+                    <p><img src="/Assets/Icons/Path@2x.png" alt="">Teft Protection</p>
+
+                    <p><img src="/Assets/Icons/Path@2x.png" alt="">Non Refundable</p>
+
+                    <div>
+                        <p class="price">Starting from<br> <span>39.999€</span></p>
+
+                        <input class="btn" type="submit" value="Buy Now">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <main>
+
     </main>
 
 </body>
