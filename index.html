@@ -7,28 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Audi</title>
-
-    <script>
-        var i = 0;
-        var images = [];
-        var time = 3000;
-
-        images[0] = 'image1.jpg'
-        images[1] = 'image2.jpg'
-        images[2] = 'image3.jpg'
-
-        function changeImg() {
-            document.slide.src
-        }
-    </script>
 </head>
 
 <body>
 
     <header>
         <nav>
-            <img src="/Assets/Logo/Audi-Logo_2016.svg" class="logo" alt="">
+            <img src="./Assets/Logo/Audi-Logo_2016.svg" class="logo" alt="">
 
             <ul id="main">
                 <li><a href="#">Home</a></li>
@@ -41,7 +26,7 @@
 
                     </ul>
                 </li>
-                <li><a href="#">Products</a></li>
+                <li><a href="#offers">Products</a></li>
                 <li class="findUS"><a href="#">Contact</a></li>
                 <div id="marker"></div>
             </ul>
@@ -129,7 +114,7 @@
 
         <!-- Offers, Buy Now most popular models -->
 
-        <section class="offers">
+        <section id="offers" class="offers">
             <h2>You might take a look...</h2>
 
             <div class="offers_wrrap">
@@ -219,6 +204,31 @@
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- Contact form -->
+
+        <section class="final">
+            <div class="final_last">
+                <div>
+                    <span>Contact us</span>
+                    <h2>If you have any questions, don't hesitate to contact us.</h2>
+
+                </div>
+                <img src="Assets/Images/contact-form-img.png" alt="">
+
+                <div class="contact">
+                    <form action="#" method="post">
+                        <input type="text" name="name" id="" placeholder="ENTER YOUR NAME" autocomplete="off"
+                            required><br>
+                        <input type="email" name="email" placeholder="ENTER YOUR EMAIL" autocomplete="off" required><br>
+                        <textarea name="message" placeholder="YOUR MESSAGE" required></textarea>
+
+                        <input class="submit" type="button" value="SUBMIT">
+                    </form>
+                </div>
+            </div>
+
         </section>
 
     </main>
