@@ -9,6 +9,50 @@ nav {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px 20px;
+    @include eXSmall {
+        padding-bottom: 10px;
+
+        #main {
+            display: none;
+            flex-direction: column;
+            text-align: center;
+            width: 100%;
+            padding-top: 5px;
+        }
+        #main.show {
+            display: flex;
+        }
+    }
+    @include mobile {
+        padding-bottom: 10px;
+
+        #main {
+            display: none;
+            flex-direction: column;
+            text-align: center;
+            width: 100%;
+            padding-top: 5px;
+        }
+        #main.show {
+            display: flex;
+        }
+    }
+
+    .hamburger {
+        background-color: transparent;
+        border: 0;
+        color: #fff;
+        cursor: pointer;
+        font-size: 20px;
+        display: none;
+
+        @include eXSmall {
+            display: block;
+        }
+        @include mobile {
+            display: block;
+        }
+    }
 
     ul {
         li {
@@ -20,9 +64,22 @@ nav {
             z-index: 5;
             width: $min-width;
             transform: translateY(+5px);
-
+            @include eXSmall {
+                width: 100%;
+                font-size: 3vw;
+            }
+            @include mobile {
+                width: 100%;
+                font-size: 3vw;
+            }
             &:hover > .drop {
                 display: block;
+                @include eXSmall {
+                    display: none;
+                }
+                @include mobile {
+                    display: none;
+                }
             }
 
             a {
@@ -71,6 +128,12 @@ nav {
     background: $secondarycolor !important;
     width: $min-width;
     @include transition(all 0.35s);
+    @include eXSmall {
+        display: none;
+    }
+    @include mobile {
+        display: none;
+    }
 }
 
 @for $i from 1 through 4 {

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Assets/Icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -14,6 +15,11 @@
     <header>
         <nav>
             <img src="./Assets/Logo/Audi-Logo_2016.svg" class="logo" alt="">
+            <!-- Hamburger menu -->
+            <button class="hamburger" id="hamburger">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+            <!-- end -->
 
             <ul id="main">
                 <li><a href="#">Home</a></li>
@@ -26,7 +32,7 @@
 
                     </ul>
                 </li>
-                <li><a href="#offers">Products</a></li>
+                <li><a href="#products">Products</a></li>
                 <li class="findUS"><a href="#">Contact</a></li>
                 <div id="marker"></div>
             </ul>
@@ -114,7 +120,7 @@
 
         <!-- Offers, Buy Now most popular models -->
 
-        <section id="offers" class="offers">
+        <section id="products" class="offers">
             <h2>You might take a look...</h2>
 
             <div class="offers_wrrap">
@@ -216,7 +222,7 @@
 
                 </div>
                 <img src="Assets/Images/contact-form-img.png" alt="">
-
+                <!-- Contact form -->
                 <div class="contact">
                     <form action="#" method="post">
                         <input type="text" name="name" id="" placeholder="ENTER YOUR NAME" autocomplete="off"
@@ -232,10 +238,14 @@
         </section>
 
     </main>
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2020 FSD. ALL RIGHTS RESERVED</p>
+        <p><a href="#">TERMS OF AGREEMENT</a></p>
+        <p><a href="#">PRIVACY POLICY</a></p>
+    </footer>
 
-    <main>
-
-    </main>
+    <script src="./js/menu.js"></script>
 
 </body>
 
