@@ -253,15 +253,10 @@ body {
 .cover_info span {
   color: #cc3535;
   text-transform: uppercase;
-  font-size: clamp(0.8rem, 1.25vw, 1.9rem);
-}
-@media (min-width: 2160px) {
-  .cover_info span {
-    font-size: 4rem;
-  }
+  font-size: clamp(0.8rem, 1.3vw, 3rem);
 }
 .cover_info h1 {
-  font-size: clamp(2rem, 2.5vw, 5rem);
+  font-size: clamp(1.5rem, 2.5vw, 6rem);
   padding: 20px 0;
 }
 @media (min-width: 506px) and (max-width: 768px) {
@@ -269,25 +264,15 @@ body {
     font-size: 1.4rem;
   }
 }
-@media (min-width: 2160px) {
-  .cover_info h1 {
-    font-size: 6rem;
-  }
-}
 .cover_info p {
   color: grey;
   border-left: 1px solid #cc3535;
   padding-left: 20px;
-  font-size: clamp(0.8rem, 1.25vw, 1.9rem);
+  font-size: clamp(0.8rem, 1.3vw, 3rem);
 }
 @media (min-width: 506px) and (max-width: 768px) {
   .cover_info p {
     font-size: 0.9rem;
-  }
-}
-@media (min-width: 2160px) {
-  .cover_info p {
-    font-size: 3rem;
   }
 }
 
@@ -394,7 +379,7 @@ body {
   top: 80%;
   left: 12%;
   padding-bottom: 2vh;
-  font-size: clamp(0.8rem, 1.25vw, 1.9rem);
+  font-size: clamp(0.8rem, 1.3vw, 3rem);
 }
 @media (max-width: 505px) {
   .aboutQ8_wrrap .car p {
@@ -422,10 +407,9 @@ body {
 }
 @media (min-width: 2160px) {
   .aboutQ8_wrrap .car p {
-    bottom: 20%;
+    top: 75%;
     left: 25%;
     transform: translate(-50%);
-    font-size: 3rem;
   }
 }
 
@@ -456,36 +440,16 @@ body {
 .aboutQ8_info span {
   color: #cc3535;
   text-transform: uppercase;
-  font-size: clamp(0.8rem, 1.25vw, 1.9rem);
-}
-@media (min-width: 2160px) {
-  .aboutQ8_info span {
-    font-size: 4rem;
-  }
+  font-size: clamp(0.8rem, 1.3vw, 3rem);
 }
 .aboutQ8_info h2 {
-  font-size: clamp(1.8rem, 1.4vw, 4rem);
+  font-size: clamp(1.3rem, 2vw, 4rem);
   padding: 20px 0;
   font-weight: 900;
 }
-@media (min-width: 768px) and (max-width: 992px) {
-  .aboutQ8_info h2 {
-    font-size: 1.7rem;
-  }
-}
-@media (min-width: 2160px) {
-  .aboutQ8_info h2 {
-    font-size: 6rem;
-  }
-}
 .aboutQ8_info p {
   padding-bottom: 20px;
-  font-size: clamp(0.8rem, 1.25vw, 1.9rem);
-}
-@media (min-width: 2160px) {
-  .aboutQ8_info p {
-    font-size: 4rem;
-  }
+  font-size: clamp(0.8rem, 1.3vw, 3rem);
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .aboutQ8_info p {
@@ -511,33 +475,18 @@ body {
   color: #cc3535;
   text-transform: uppercase;
   font-weight: 900;
-  font-size: clamp(0.8rem, 1.25vw, 1.9rem);
-}
-@media (min-width: 2160px) {
-  .featured_wrrap .promo {
-    font-size: 4rem;
-  }
+  font-size: clamp(0.8rem, 1.3vw, 3rem);
 }
 .featured_wrrap h2 {
-  font-size: clamp(1.8rem, 1.4vw, 4rem);
+  font-size: clamp(1.3rem, 2vw, 4rem);
   padding: 20px 0;
   font-weight: 900;
   color: white;
 }
-@media (min-width: 2160px) {
-  .featured_wrrap h2 {
-    font-size: 5rem;
-  }
-}
 .featured_wrrap p {
   padding-bottom: 20px;
-  font-size: clamp(0.8rem, 1.25vw, 1.9rem);
+  font-size: clamp(0.8rem, 1.3vw, 3rem);
   color: white;
-}
-@media (min-width: 2160px) {
-  .featured_wrrap p {
-    font-size: 4rem;
-  }
 }
 .featured_wrrap_boxes {
   display: flex;
@@ -568,7 +517,7 @@ body {
   color: rgba(255, 255, 255, 0.898);
   padding: 10px 0;
   font-weight: 900;
-  font-size: clamp(0.8rem, 1.25vw, 1.9rem);
+  font-size: clamp(0.8rem, 1.3vw, 3rem);
 }
 @media (min-width: 2160px) {
   .featured_wrrap_boxes .box span {
@@ -583,16 +532,11 @@ body {
 }
 .offers h2 {
   text-align: center;
-  font-size: clamp(1.8rem, 1.4vw, 4rem);
+  font-size: clamp(1.3rem, 2vw, 4rem);
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .offers h2 {
     font-size: 2.5rem;
-  }
-}
-@media (min-width: 2160px) {
-  .offers h2 {
-    font-size: 6rem;
   }
 }
 .offers_wrrap {
@@ -650,7 +594,7 @@ body {
 }
 .offers_wrrap .examples .seatDoor {
   text-align: center;
-  font-size: clamp(0.8rem, 1.25vw, 1.9rem);
+  font-size: clamp(0.8rem, 1.3vw, 3rem);
   padding: 5px 0;
 }
 @media (min-width: 768px) and (max-width: 992px) {
@@ -658,27 +602,17 @@ body {
     font-size: 2rem;
   }
 }
-@media (min-width: 2160px) {
-  .offers_wrrap .examples .seatDoor {
-    font-size: 3rem;
-  }
-}
 .offers_wrrap .examples h3 {
   text-align: center;
-  font-size: clamp(1.6rem, 1.2vw, 3rem);
+  font-size: clamp(1.1rem, 1.8vw, 3.4rem);
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .offers_wrrap .examples h3 {
     font-size: 2.7rem;
   }
 }
-@media (min-width: 2160px) {
-  .offers_wrrap .examples h3 {
-    font-size: 4rem;
-  }
-}
 .offers_wrrap .examples p {
-  font-size: clamp(0.8rem, 1.25vw, 1.9rem);
+  font-size: clamp(0.8rem, 1.3vw, 3rem);
   padding: 4px 0;
   margin-left: 28px;
   opacity: 0.7;
@@ -689,87 +623,71 @@ body {
     font-size: 2rem;
   }
 }
-@media (min-width: 2160px) {
-  .offers_wrrap .examples p {
-    font-size: 4rem;
-  }
-}
 .offers_wrrap .examples p img {
   width: 6%;
   margin: 0 auto;
 }
-.offers_wrrap .examples div {
+
+.examples > div {
   display: flex;
   justify-content: space-evenly;
   padding-top: 10px;
   vertical-align: bottom;
 }
-.offers_wrrap .examples div .price {
-  font-size: clamp(0.8rem, 1.25vw, 1.9rem);
+.examples > div .price {
+  font-size: clamp(0.7rem, 1.5vw, 3rem);
   padding: 0;
   margin: 0;
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  .offers_wrrap .examples div .price {
+  .examples > div .price {
     font-size: 2rem;
   }
 }
-@media (min-width: 2160px) {
-  .offers_wrrap .examples div .price {
-    font-size: 3rem;
-  }
-}
-.offers_wrrap .examples div span {
+.examples > div span {
   font-weight: 900;
   font-size: 1.4rem;
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  .offers_wrrap .examples div span {
+  .examples > div span {
     font-size: 2rem;
   }
 }
-@media (min-width: 2160px) {
-  .offers_wrrap .examples div span {
-    font-size: 3rem;
-  }
-}
-.offers_wrrap .examples div .btn {
+.examples > div .btn {
   border-radius: 20px;
   padding: 0px 20px;
   background: #f8e0e6;
   border: none;
   color: red;
-  font-size: 1vw;
+  font-size: clamp(0.7rem, 1vw, 2rem);
   font-weight: bold;
   cursor: pointer;
 }
 @media (max-width: 505px) {
-  .offers_wrrap .examples div .btn {
+  .examples > div .btn {
     font-size: 1rem;
   }
 }
 @media (min-width: 506px) and (max-width: 768px) {
-  .offers_wrrap .examples div .btn {
+  .examples > div .btn {
     font-size: 1rem;
     padding: 5px 30px;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  .offers_wrrap .examples div .btn {
+  .examples > div .btn {
     font-size: 1.8rem;
     padding: 5px 30px;
   }
 }
 @media (min-width: 2160px) {
-  .offers_wrrap .examples div .btn {
-    font-size: 2rem;
+  .examples > div .btn {
     padding: 5px 30px;
   }
 }
-.offers_wrrap .examples div .btn:hover {
-  background: white;
+.examples > div .btn:hover {
+  background: #d8e3b2;
   color: #000;
-  border: 0.5px solid lightgray;
   transition: 0.5s ease;
 }
 
@@ -831,16 +749,11 @@ body {
 }
 @media (max-width: 505px) {
   .final_last div span {
-    font-size: clamp(0.8rem, 1.25vw, 1.9rem);
-  }
-}
-@media (min-width: 2160px) {
-  .final_last div span {
-    font-size: 3.5rem;
+    font-size: clamp(0.8rem, 1.3vw, 3rem);
   }
 }
 .final_last div h2 {
-  font-size: clamp(1.8rem, 1.4vw, 4rem);
+  font-size: clamp(1.3rem, 2vw, 4rem);
   padding: 20px 0;
   font-weight: 900;
   color: white;
@@ -859,11 +772,6 @@ body {
 @media (min-width: 768px) and (max-width: 992px) {
   .final_last div h2 {
     font-size: 1.8em;
-  }
-}
-@media (min-width: 2160px) {
-  .final_last div h2 {
-    font-size: 5rem;
   }
 }
 .final_last img {
@@ -947,11 +855,6 @@ body {
     font-size: 1.4rem;
   }
 }
-@media (min-width: 2160px) {
-  .contact input {
-    font-size: 3rem;
-  }
-}
 .contact textarea {
   width: 80%;
   height: 18vh;
@@ -987,11 +890,6 @@ body {
     font-size: 1.4rem;
   }
 }
-@media (min-width: 2160px) {
-  .contact textarea {
-    font-size: 3rem;
-  }
-}
 .contact .submit {
   width: 45%;
   padding: 10px 15px;
@@ -1005,7 +903,6 @@ body {
 }
 @media (min-width: 2160px) {
   .contact .submit {
-    font-size: 3rem;
     height: fit-content;
   }
 }
@@ -1019,7 +916,7 @@ footer {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  font-size: 1rem;
+  font-size: clamp(0.7rem, 1.3vw, 2.5rem);
   font-weight: 900;
   color: gray;
 }
@@ -1039,11 +936,6 @@ footer {
   footer {
     font-size: 0.8rem;
     text-align: start;
-  }
-}
-@media (min-width: 2160px) {
-  footer {
-    font-size: 2rem;
   }
 }
 footer p {

@@ -48,9 +48,6 @@ body {
             color: rgb(204, 53, 53);
             text-transform: uppercase;
             font-size: $P;
-            @include wide {
-                font-size: 4rem;
-            }
         }
 
         h1 {
@@ -58,9 +55,6 @@ body {
             padding: 20px 0;
             @include mobile {
                 font-size: 1.4rem;
-            }
-            @include wide {
-                font-size: 6rem;
             }
         }
 
@@ -71,9 +65,6 @@ body {
             font-size: $P;
             @include mobile {
                 font-size: 0.9rem;
-            }
-            @include wide {
-                font-size: 3rem;
             }
         }
     }
@@ -182,10 +173,9 @@ body {
                     font-size: 1.2rem;
                 }
                 @include wide {
-                    bottom: 20%;
+                    top: 75%;
                     left: 25%;
                     transform: translate(-50%);
-                    font-size: 3rem;
                 }
             }
         }
@@ -216,29 +206,19 @@ body {
         color: rgb(204, 53, 53);
         text-transform: uppercase;
         font-size: $P;
-        @include wide {
-            font-size: 4rem;
-        }
     }
 
     h2 {
         font-size: $h2;
         padding: 20px 0;
         font-weight: 900;
-        @include tablet {
-            font-size: 1.7rem;
-        }
-        @include wide {
-            font-size: 6rem;
-        }
+   
     }
 
     p {
         padding-bottom: 20px;
         font-size: $P;
-        @include wide {
-            font-size: 4rem;
-        }
+
         @include tablet {
             font-size: 1rem;
         }
@@ -268,9 +248,6 @@ body {
             text-transform: uppercase;
             font-weight: 900;
             font-size: $P;
-            @include wide {
-                font-size: 4rem;
-            }
         }
 
         h2 {
@@ -278,18 +255,12 @@ body {
             padding: 20px 0;
             font-weight: 900;
             color: white;
-            @include wide {
-                font-size: 5rem;
-            }
         }
 
         p {
             padding-bottom: 20px;
             font-size: $P;
             color: white;
-            @include wide {
-                font-size: 4rem;
-            }
         }
 
         &_boxes {
@@ -334,9 +305,7 @@ body {
         @include tablet {
             font-size: 2.5rem;
         }
-        @include wide {
-            font-size: 6rem;
-        }
+  
     }
 
     &_wrrap {
@@ -388,9 +357,7 @@ body {
                 @include tablet {
                     font-size: 2rem;
                 }
-                @include wide {
-                    font-size: 3rem;
-                }
+           
             }
 
             h3 {
@@ -398,9 +365,6 @@ body {
                 font-size: $h3;
                 @include tablet {
                     font-size: 2.7rem;
-                }
-                @include wide {
-                    font-size: 4rem;
                 }
             }
 
@@ -413,77 +377,69 @@ body {
                 @include tablet {
                     font-size: 2rem;
                 }
-                @include wide {
-                    font-size: 4rem;
-                }
+        
 
                 img {
                     width: 6%;
                     margin: 0 auto;
                 }
             }
+        }
+    }
+}
 
-            div {
-                display: flex;
-                justify-content: space-evenly;
-                padding-top: 10px;
-                vertical-align: bottom;
+.examples > div {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    vertical-align: bottom;
 
-                .price {
-                    font-size: $P;
-                    padding: 0;
-                    margin: 0;
-                    @include tablet {
-                        font-size: 2rem;
-                    }
-                    @include wide {
-                        font-size: 3rem;
-                    }
-                }
+    .price {
+        font-size: clamp(0.7rem, 1.5vw, 3rem);
+        padding: 0;
+        margin: 0;
+        @include tablet {
+            font-size: 2rem;
+        }
+  
+    }
 
-                span {
-                    font-weight: 900;
-                    font-size: 1.4rem;
-                    @include tablet {
-                        font-size: 2rem;
-                    }
-                    @include wide {
-                        font-size: 3rem;
-                    }
-                }
+    span {
+        font-weight: 900;
+        font-size: 1.4rem;
+        @include tablet {
+            font-size: 2rem;
+        }
+   
+    }
 
-                .btn {
-                    border-radius: 20px;
-                    padding: 0px 20px;
-                    background: #f8e0e6;
-                    border: none;
-                    color: red;
-                    font-size: 1vw;
-                    font-weight: bold;
-                    cursor: pointer;
-                    @include eXSmall {
-                        font-size: 1rem;
-                    }
-                    @include mobile {
-                        font-size: 1rem;
-                        padding: 5px 30px;
-                    }
-                    @include tablet {
-                        font-size: 1.8rem;
-                        padding: 5px 30px;
-                    }
-                    @include wide {
-                        font-size: 2rem;
-                        padding: 5px 30px;
-                    }
-                    &:hover {
-                        background: white;
-                        color: #000;
-                        border: 0.5px solid lightgray;
-                        transition: 0.5s ease;
-                    }
-                }
-            }
+    .btn {
+        border-radius: 20px;
+        padding: 0px 20px;
+        background: #f8e0e6;
+        border: none;
+        color: red;
+        font-size: clamp(0.7rem, 1vw, 2rem);
+        font-weight: bold;
+        cursor: pointer;
+        @include eXSmall {
+            font-size: 1rem;
+        }
+        @include mobile {
+            font-size: 1rem;
+            padding: 5px 30px;
+        }
+        @include tablet {
+            font-size: 1.8rem;
+            padding: 5px 30px;
+        }
+        @include wide {
+            padding: 5px 30px;
+        }
+        &:hover {
+            background: rgb(216, 227, 178);
+            color: #000;
+            transition: 0.5s ease;
         }
     }
 }
@@ -535,9 +491,7 @@ body {
                 @include eXSmall {
                     font-size: $P;
                 }
-                @include wide {
-                    font-size: 3.5rem;
-                }
+           
             }
 
             h2 {
@@ -555,9 +509,7 @@ body {
                 @include tablet {
                     font-size: 1.8em;
                 }
-                @include wide {
-                    font-size: 5rem;
-                }
+           
             }
         }
 
@@ -625,9 +577,7 @@ body {
             margin: 5px 0;
             font-size: 1.4rem;
         }
-        @include wide {
-            font-size: 3rem;
-        }
+   
     }
 
     textarea {
@@ -658,9 +608,7 @@ body {
             padding: 5px 0 0 4%;
             font-size: 1.4rem;
         }
-        @include wide {
-            font-size: 3rem;
-        }
+      
     }
 
     .submit {
@@ -674,7 +622,6 @@ body {
         color: white;
         cursor: pointer;
         @include wide {
-            font-size: 3rem;
             height: fit-content;
         }
 
@@ -692,7 +639,7 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    font-size: 1rem;
+    font-size: clamp(0.7rem, 1.3vw, 2.5rem);
     font-weight: 900;
     color: gray;
     @include eXSmall {
@@ -707,9 +654,7 @@ footer {
         font-size: 0.8rem;
         text-align: start;
     }
-    @include wide {
-        font-size: 2rem;
-    }
+ 
     p {
         margin: 25px 80px;
         @include eXSmall {
