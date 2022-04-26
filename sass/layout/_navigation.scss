@@ -11,6 +11,8 @@ nav {
     padding: 10px 20px;
     @include eXSmall {
         padding-bottom: 10px;
+        position: absolute;
+        z-index: 9999;
 
         #main {
             display: none;
@@ -25,6 +27,8 @@ nav {
     }
     @include mobile {
         padding-bottom: 10px;
+        position: absolute;
+        z-index: 9999;
 
         #main {
             display: none;
