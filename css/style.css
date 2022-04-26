@@ -690,7 +690,8 @@ body {
   }
 }
 .examples > div .btn:hover {
-  background: #d8e3b2;
+  background: white;
+  outline: solid 0.1px black;
   color: #000;
   transition: 0.5s ease;
 }
